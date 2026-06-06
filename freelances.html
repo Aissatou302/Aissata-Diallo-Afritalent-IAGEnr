@@ -11,27 +11,162 @@ rel="stylesheet">
 <!-- Votre feuille de style personnelle --> 
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body> 
-    <nav>
-    <h3>AfriTalent</h3>
-    <div>
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="freelances.html">Freelances</a></li>
-        <li><a href="tarifs.html">Tarifs</a></li>
-        <li><a href="about.html">a propos</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="contact.html">contact</a></li>
-    </ul>
-    </div>
-</nav>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h1>AfriTalent</h1>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AfriTalent</a>
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navMenu" 
+                aria-controls="navMenu" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav> 
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Nos Freelances</h2>
+        <div class="text-center mb-4">
+            <button class="btn btn-primary filter-btn" data-filter="all"> Tous</button>
+            <button  class=" btn btn-outline-primary filter-btn" data-filter="web">Web</button>
+            <button  class="btn btn-outline-primary filter-btn" data-filter="design">Design</button>
+            <button  class="btn btn-outline-primary filter-btn" data-filter="marketing">Marketing</button>
+        </div>
+        <div class="row g-4" id="freelancecontainer">
+            <div class="col-lg-4 col-md-6 freelancer web">
+                <div class="card profile-card">
+                    <img src="https://www.amanextgen.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fafrican-american-black-woman.2f1fe047.jpg&w=3840&q=75" class="card-img-top" alt="Web">
+                    <div class="card-body text-center">
+                        <h5>souadou Diallo</h5>
+                        <p class="speciality">developpeuse web</p>
+                        <p>création de sites modernes et responsives</p>
+                        <h6>30£</h6>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <button class="btn btn-primary mt-2">voir le profil</button>
+                     </div>
 
-
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-<!-- Votre script JavaScript --> 
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 freelancer design">
+            <div class="card profile-card">
+                <img src="https://womenintech.bj/wp-content/uploads/2024/08/ui%EF%80%A2ux-disgner-1200x810.jpg" class="card-img-top" alt="ux">
+                <div class="card-body text-center">
+                <h5>Aicha Diallo</h5>
+                <p class="speciality">UI/UX Designer</p>
+                <p>interfaces modernes et intuitives</p>
+                <h6>20£/h</h6>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <button  class="btn btn-primary mt-2">voir le profil</button>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 freelancer marketing">
+            <div class="card profile-card">
+                <img src="https://img.freepik.com/premium-photo/digital-engagement-young-black-man-radiates-joy-smiling-smartphone-s-content-delight-ai-genera_899027-13042.jpg?w=2000" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5>Moussa ba</h5>
+                    <p class="speciality">Marketing digital</p>
+                    <p>Gestion campagne et réseau.</p>
+                    <h6>25£/h</h6>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <button  class="btn btn-primary mt-2">voir le profil</button>
+                </div>
+            </div>
+        </div>
+        <div  class="col-lg-4 col-md-6 freelancer design">
+            <div class="card profile-card">
+                <img src="https://png.pngtree.com/background/20230916/original/pngtree-smiling-young-photographer-picture-photojournalist-snapshot-photo-picture-image_5094431.jpg" class="card-img-top" alt="graphiste">
+                <div class="card-body text-center">
+                    <h5>mareme Dia</h5>
+                    <p  class="speciality">graphiste</p>
+                    <p>création des visuels.</p>
+                    <h6>20£/h</h6>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <button  class="btn btn-primary mt-2">voir le profil</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 freelancer designe">
+            <div  class="card profile-card">
+                <img src="https://img.freepik.com/photos-premium/jeune-journaliste-afro-americaine-microphone-dans-studio-journaliste-africaine-direct-dans-industrie-du-journalisme-generee-par-ia_538213-8374.jpg" class="card-img-top" alt="web">
+                <div class="card-body text-center">
+                    <h5>Saly faye</h5>
+                    <p class="speciality">la rédactrice web</p>
+                    <p>écrire des contenu pour les sites internet.</p>
+                    <h6>18£/h</h6>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <button  class="btn btn-primary mt-2">voir le profil</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 freelancer designe">
+            <div  class="card profile-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.KROdXljrfL-SArVxJr2BJQHaEU?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="dta">
+                <div class="card-body text-center">
+                    <h5>Oumar SOW</h5>
+                    <p class="speciality">Data analust</p>
+                    <p>Analyse des donnés et créationde tableaux de bord pour faciliter la prise de decision.</p>
+                    <h6>25£/h</h6>
+                    <div  class="stars">⭐⭐⭐⭐⭐</div>
+                    <button  class="btn btn-primary mt-2">voir le profil</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 freelancer designe">
+            <div class="card profile-card">
+                <img src="https://img.freepik.com/photos-premium/homme-travaillant-ligne-ordinateur-portable_274679-42829.jpg" class="card-img-top" alt=" manage">
+                <div class="card-body text-center">
+                    <h5>ibrahim fall</h5>
+                    <p  class="speciality">community manager</p>
+                    <p>professionnels sur réseau sociaux.</p>
+                    <h6>35£/h</h6>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <button  class="btn btn-primary mt-2">voir le profil</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 freelancer designe">
+            <div class="card profile-card">
+                <img src="https://img.freepik.com/photos-premium/homme-africain-reconnaissance-faciale-tablette_780608-10464.jpg" class="card-img-top" alt="digital">
+                <div class="card-body text-center">
+                    <h5>Cheikh guéye</h5>
+                    <p  class="speciality">consultant digital</p>
+                    <p>consultanten reunion.</p>
+                    <h6>25£/h</h6>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <button  class="btn btn-primary mt-2">voir le profil</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <h5>AfriTalent</h5>
+            <p>la plateforme des talents africains.</p>
+            <p>&copy;2025 AfriTalent</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script> 
+        <!-- Votre script JavaScript --> 
 <script src="js/main.js"></script>
+
+    
+    
+    
 </body>
 </html>
