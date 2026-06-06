@@ -1,0 +1,199 @@
+navbar{
+    position: fixed;
+    transition: all 0.4 ease;
+    font-family: 'poppins',sans-serif;
+}
+.navbar-scrolled{
+    justify-content: space-between;
+    text-align: center;
+    background-image: url(https://cdn.shopify.com/s/files/1/0573/5563/2848/files/LOGO_27_2048x.png?v=1622458256);
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0,0, 0.15);
+    padding-top: 0.5rem;
+    padding-bottom: O.5rem;
+}
+.navbar-scrolled .nav-link,
+.navbar-scrolled .nav-brand{
+    color: #1a1a1a;
+}
+.btn-cta{
+    background: #ff6B35;
+    margin-bottom: auto;
+    color: white;
+    font-weight: 500;
+    float: calc(center);
+    border-radius: 60px;
+}
+.btn-cta:hover{
+    background: #e55a2b;
+    color: white;
+    transform: translateY(-3px);
+}
+.hero-section{
+    background: linear-gradient(130deg,#004E89  0%,#1A659E  100%);
+    color: white;
+    padding: 100px 0 50px 0;
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+.hero-section h1 h2{
+    font-family: 'inter',sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    opacity: 0.9;
+}
+.btn-cta-hero{
+    background: #ff6B35;
+    color: white;
+    float: calc(center);
+    font-weight: 400;
+    border: none;
+    transition: all 0.3s ease;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 52, 0.2);
+}
+;.btn-cta-secondary{
+    border: 2px solid white;
+    color: white;
+    font-weight: 400;
+    background: transparent;
+}
+.hero-img{
+    max-width: 100%;
+    display: grid;
+    height: 90PX;
+    transform: translateX(14%);
+    animation: float 4s ease-in-out infinite;
+}
+.stat-card{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.stat-number{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'poppins',sans-serif;
+    color: #ff6B35;
+}
+.comment-ça-marche{
+    padding: 80px 0;
+    background: #F8FAFC;
+}
+.section-title{
+    font-family: 'poooins',sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #004E89;
+    text-align: center;
+    margin-bottom: 60px;
+} 
+.icone{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.bento-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(200px,auto);
+    gap: 20px;
+    grid-auto-flow: dense;
+}
+.bento-card{
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0,0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #E2E8F0;
+}
+.bento-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 78,137, 0.15);
+}
+.card-large{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.card-wide{
+    grid-column: span 2;
+}
+.card-tall{
+    grid-row: span 2;
+} .step-number{
+    font-family: 'poppins',sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ff6B35;
+    opacity: 0.2;
+    line-height: 1;
+}
+.step-icon{
+    font-size: 2.5rem;
+    color: #004E89;
+    margin-bottom: 15px;
+}
+.step-title{
+    font-family: 'poppins',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1E293B;
+    margin-bottom: 10px;
+}
+.step-desc{
+    font-family: 'Inter',sans-serif;
+    font-size: 0.95rem;
+    color: #64748B;
+    line-height: 1.6;
+}.bento-grid{
+    grid-template-columns: repeat(2,1fr);
+}
+.card-large, .card-wide, .card-tall{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+#carouselexample{
+
+max-width: 800px;
+margin: auto;
+}
+.carousel-item .card{
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0,0, 0.01);
+    background: #fff;
+    transition: 0.3s;
+}
+.carousel-item .card:hover{
+    transform: translateY(-5px);
+}
+.carousel-item h5{
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 5px;
+}
+.carousel-item p{
+    margin-bottom: 10px;
+}
+.stars{
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: #0d6efd;
+    border-radius: 50%;
+    padding: 15px;
+}
+.carousel-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
