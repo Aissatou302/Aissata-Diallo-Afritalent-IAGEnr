@@ -258,4 +258,99 @@ margin: auto;
 .tarif-title{
     font-weight: bold;
     margin-bottom: 40px;
+} 
+.section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #212529;
+}
+.histoire img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.histoire p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+.team-card{
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.team-card:hover{
+    transform: translateY(-10px);
+}
+.team-card img{
+    height: 250px;
+    object-fit: cover;
+}
+.team-card .card-body{
+    text-align: center;
+}
+.team-card h5{
+    font-weight: bold;
+}
+.team-card p{
+    color: #777;
+}
+.value-card{
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    height: 100%;
+}
+.value-card:hover{
+    transform: translateY(-8px);
+}
+.value-card i{
+    font-size: 3rem;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+.value-card h4{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.chiffres-cles{
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+.stat-card{
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.stat-card:hover{
+    transform: translateY(-8px);
+}
+.stat-card h3{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+.stat-card p{
+    color: #666;
+    margin-top: 10px;
+}
+section h2{
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+.stat-card,
+.value-card,
+.team-card{
+    margin-bottom: 20px;
 }
