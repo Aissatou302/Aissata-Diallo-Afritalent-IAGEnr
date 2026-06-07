@@ -53,3 +53,32 @@ const buttons = document .querySelectorAll('.filter-btn');
  animatevalue("freelances",0, 2500, 2000)
  animatevalue("entreprises",0, 800, 2000)
  animatevalue("mission",0, 1200, 3000)
+
+
+ const form = document.querySelector("form");
+ form.addEventListener("submit" , function (e){
+    e.preventDefault();
+
+    const nom = document.getElementById("nom").Value.trim();
+    const prenom = document.getElementById("prenom").Value.trim();
+    const email= document.getElementById("email").Value.trim();
+    const message = document.getElementById("message").Value.trim();
+
+    if (nom === "" || prenom === "" || email === "" || message === "" ) {
+        alert("Tous les champs sont obligatoire !");
+        return;
+    }
+    const emailRegex = /^[^s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)){
+        alert("Veuillez saisir un email valide !")
+        return;
+    }
+    if(message.length < 20) {
+        alert("Le message doit contenir au moins 20 caractéres.");
+        return;
+    }
+    alert("Message envoyé avec succés !");
+    form.reset();
+
+ });
