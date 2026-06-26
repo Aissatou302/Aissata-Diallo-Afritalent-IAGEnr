@@ -1,3 +1,9 @@
+:root{
+    --couleur-principale:#0d6efd;
+    --couleur-secondaire:#198754;
+    --couleur-texte:#333;
+    --blanc:#fff;
+}
 navbar{
     position: fixed;
     transition: all 0.4 ease;
